@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplikasi Perminyakan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Perminyakan</div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Informasi</a></li>
+                <li><a href="#">Proyek</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Selamat Datang di Dunia Perminyakan</h1>
+        <p>Menjelajahi Dunia Energi dengan Teknologi Canggih</p>
+        <button onclick="learnMore()">Pelajari Lebih Lanjut</button>
+    </section>
+    
+    <section class="calculator">
+        <h2>Kalkulator Estimasi Energi</h2>
+        <p>Masukkan jumlah minyak yang diproduksi (dalam barel) untuk menghitung estimasi energi yang dihasilkan.</p>
+        <input type="number" id="oilInput" placeholder="Jumlah Minyak (barel)">
+        <button onclick="calculateEnergy()">Hitung Energi</button>
+        <p id="energyOutput"></p>
+    </section>
+
+    <section class="article">
+        <h2>Artikel Tentang Perminyakan</h2>
+        <div class="article-content">
+            <h3>Apa itu Perminyakan?</h3>
+            <p>Perminyakan adalah industri yang terlibat dalam eksplorasi, pengeboran, produksi, pengolahan, dan distribusi minyak bumi. Minyak bumi adalah sumber energi utama yang digunakan di seluruh dunia untuk berbagai kebutuhan, mulai dari bahan bakar kendaraan hingga bahan baku industri kimia.</p>
+            
+            <h3>Sejarah Perminyakan</h3>
+            <p>Industri perminyakan dimulai pada abad ke-19 dengan penemuan sumur minyak pertama di Pennsylvania, Amerika Serikat. Sejak saat itu, permintaan akan minyak bumi terus berkembang, dan industri ini menjadi salah satu yang paling penting dalam perekonomian global.</p>
+    
+            <h3>Manfaat Minyak Bumi</h3>
+            <p>Minyak bumi memiliki banyak manfaat, termasuk sebagai sumber energi untuk transportasi, pemanas, dan pembangkit listrik. Selain itu, minyak juga digunakan dalam pembuatan berbagai produk seperti plastik, bahan kimia, dan kosmetik.</p>
+    
+            <h3>Tantangan dalam Industri Perminyakan</h3>
+            <p>Industri perminyakan menghadapi berbagai tantangan, termasuk dampak lingkungan dari pengeboran dan pemrosesan minyak, serta ketergantungan global terhadap energi fosil. Oleh karena itu, banyak negara dan perusahaan yang berinvestasi dalam energi terbarukan untuk mengurangi dampak negatif dari penggunaan minyak.</p>
+        </div>
+    </section>
+    
+
+    <section class="chart">
+        <h2>Grafik Produksi Minyak Global</h2>
+        <canvas id="oilChart"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Perminyakan | Semua Hak Dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
